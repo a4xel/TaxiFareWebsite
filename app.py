@@ -36,8 +36,8 @@ formatted_pickup_datetime = utc_pickup_datetime.strftime("%Y-%m-%d %H:%M:%S UTC"
 #The code below handles the pick-up and drop-off coordinates
 
 
-pick_up= st.text_input('Enter your pick up location', '844 AVENUE OF THE AMERICAS')
-drop_off=st.text_input('Enter your drop off location', '1200 BROADWAY')
+pick_up= st.text_input('Enter your pick up location', '"844 AVENUE OF THE AMERICAS"')
+drop_off=st.text_input('Enter your drop off location', '"1200 BROADWAY"')
 
 
 url = "https://maps.googleapis.com/maps/api/geocode/json"

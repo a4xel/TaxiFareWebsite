@@ -2,3 +2,5 @@ streamlit
 datetime
 requests
 pytz
+typing_extensions
+numpy

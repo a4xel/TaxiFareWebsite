@@ -3,6 +3,7 @@ import datetime
 import requests
 import pytz
 import numpy as np
+from os import environ
 
 '''
 # NYC Taxifare Predictor
@@ -41,6 +42,7 @@ drop_off=st.text_input('Enter your drop off location', '1200 BROADWAY')
 
 url = "https://maps.googleapis.com/maps/api/geocode/json"
 
+KEY= environ.get("KEY")
 
 params1 = {"address": pick_up,"key": KEY}
 params2 = {"address": drop_off,"key": KEY}

@@ -42,8 +42,8 @@ drop_off=st.text_input('Enter your drop off location', '1200 BROADWAY')
 url = "https://maps.googleapis.com/maps/api/geocode/json"
 
 
-params1 = {"address": pick_up,"key": key}
-params2 = {"address": drop_off,"key": key}
+params1 = {"address": pick_up,"key": KEY}
+params2 = {"address": drop_off,"key": KEY}
 
 response1 = requests.get(url,params1).json()
 response2 = requests.get(url,params2).json()
